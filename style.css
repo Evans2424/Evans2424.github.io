@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('imagens/2_blur.jpg') no-repeat fixed;
+    background-position: center;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+}
+
+main {
+    max-width: 900px;
+    background-color: #1e1c1bd6;
+    margin: 70px auto auto auto;
+    padding: 30px;
+    box-shadow: 0px 0px 10px black;
+}
+
+nav {
+    margin-top: -30px;
+}
+
+ul {
+    list-style: none;
+    text-align: right;
+}
+
+li {
+    display: inline-block;
+}
+
+li > a > img {
+    width: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+li > a {
+    background: linear-gradient(#923c2b, #572319);
+    padding: 5px 10px;
+    margin-right: -5px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+}
+
+li > a:hover {
+    background: linear-gradient(#5FA356, #42743c);
+}
+
+img#bg-img {
+    opacity: 100%;
+    width: 150px;
+    position: relative;
+    display: block;
+    top: -70px;
+}
+
+h1 {
+    text-align: center;
+    width: 400px;
+    margin: -150px auto 80px auto;
+    text-shadow: 2px 2px 5px black;
+}
+
+h3 {
+    margin: 20px 0;
+    text-shadow: 2px 2px 5px black; 
+}
+
+p {
+    text-indent: 40px;
+    text-align: justify;
+    margin: 10px 0;
+}
+
+.frac {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0 0 10px black;
+    color: #5FA356;
+}
+
+h2#inside-h2 {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    height: 0;
+    text-shadow: 2px 2px 5px black; 
+}
+
+img#img-principal {
+    width: 100%;
+    border-radius: 5px;
+}
