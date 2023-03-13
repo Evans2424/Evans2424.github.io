@@ -22,17 +22,12 @@ body {
     grid-template-columns: 1fr 8fr;
 }
 
-@media (max-width: 767px) {
-    body {
-        width: 100%;
-      background-image: url('../imagens/2_blur.jpg');
-      background-size: auto;
-      background-position: center top;
-      background-repeat: no-repeat;
-    }
+@media (max-width: 48em) {
+    
   }
 
 #Lateral {
+    max-width: 100%;
     margin : 0 auto;
     padding-top: 50px;
     grid-column-start: 1;
@@ -51,7 +46,6 @@ body {
 #conteudo {
     background-color: #1e1c1bd6;
     margin: 70px auto auto auto;
-
     padding: 30px;
     box-shadow: 0px 0px 10px black;
     grid-column-start: 2;
@@ -67,46 +61,49 @@ body {
 {
     /*You can decorate the menu's container, such as adding background images through this block*/
     background-color: #222;
-
+    max-width: 514px;
     height: 2.3em;
     padding: auto;
     border-radius: 5px;
-    margin-bottom: 3em;
+    margin: 0 auto 3em;
+} 
+
+#sses1 #hamburger {
+    display: none;
 }
 
-#sses1 ul 
-{ 
+#sses1 ul { 
     position: relative;
     list-style-type: none;
     float:left;
-    padding:0;margin:0;
+    padding:0;margin:0 auto;
     grid-column-start: 2;
     grid-column-end: 3;
-
-
 }
-#sses1 li
-{
+
+#sses1 li {
     float:left;
     list-style-type: none;
     padding:0;margin:0;background-image:none;
     border-right: solid 1px #333;
-  
 }
+
+#sses1 li:nth-child(5) {
+    border-right: none;
+}
+
 /*CSS for background bubble*/
-#sses1 li.highlight
-{
+#sses1 li.highlight {
     background-color:#800;
     top:36px;
     height:2px;
     border-bottom:solid 1px #C00;
     z-index: 1;
     position: absolute;
-    overflow:hidden;
-    
+    overflow: hidden;
 }
-#sses1 li a
-{
+
+#sses1 li a {
     height:36px;
     padding-top: 8px;
     margin: 0 18px;/*used to adjust the distance between each menu item. Now the distance is 20+20=40px.*/
@@ -124,35 +121,39 @@ body {
 img#bg-img {
     opacity: 100%;
     width: 150px;
-    position: relative;
     grid-column-start: 1;
     grid-column-end: 2;
-    
 }
 
-h1 {
-    
+h1, #FRAC_Atualmente {
     text-align: center;
-    width: 400px;
+    width: 100%;
     text-shadow: 2px 2px 5px black;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
 }
 
-#FRAC_Atualmente{
-    text-align: center;
-    font-size: 2em;
-    text-shadow: 2px 2px 5px black;
-    margin: 0 auto;
-    margin-bottom: 1em;
-}
-
-#Principal > h2{
+#Principal > h2 {
     margin-bottom: 20px;
-
+    text-align: center;
 }
+
 h3 {
     margin: 20px 0;
-    text-shadow: 2px 2px 5px black; 
+    text-shadow: 1px 1px 2px rgba(104, 104, 104, 0.468); 
+}
+
+h3 > a {
+    color: rgb(255, 0, 0);
+}
+
+h3 > a:hover {
+    color: rgb(148, 0, 0);
+    transition: .5s;
+}
+
+h4 {
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 
 p {
@@ -182,6 +183,10 @@ img#img-principal {
     border-radius: 5px;
 }
 
+img.premio-pastor {
+    margin: 5px 0;
+}
+
 .card-container {
     display: flex;
     background-color: #333;
@@ -194,6 +199,7 @@ img#img-principal {
     border-radius: 5px;
     clear: both;
     line-height: 1em;
+    box-shadow: 2px 2px 2px black;;
   }
 
 .card-imagem_pessoal{
