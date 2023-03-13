@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <title>FRAC - Frente Revolucionária de Aprendizes de Caloiros</title>
     <script src="js/cool_menu.js"></script>
     <script src="js/card_generator.js"></script>
@@ -26,12 +27,15 @@
     <div id ="conteudo">
         <div id = "sse1">
             <div id = "sses1">
+                <!-- just for the hamburguer menu in responsive layout -->
+                <input type="checkbox" id="hamburger"> 
+                <label class="hamburger" for="hamburger"></label>
                 <ul>
                     <li><a href="index.html"><img src="imagens/home.png" alt="home">&nbsp;</a></li>
                     <li><a href="historia.html">História</a></li>
                     <li><a href="frac_atualmente.html">A FRAC Atualmente</a></li>
-                    <li><a href="Premios.html">Prémios</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="premios.html">Prémios</a></li>
+                    <li><a href="#">Contato</a></li>
                 </ul>
             </div>
         </div>
@@ -39,7 +43,7 @@
         <!--Fim do Menu-->
         <div id = "Principal"> 
 
-        <div id ="FRAC_Atualmente"> A FRAC Atualmente</div>
+        <div id ="FRAC_Atualmente"><h1>A FRAC Atualmente</h1></div>
         <div id="Titulo-Hierarquia"> Tesoureiro FRACAE </div>
         <div id="card-container">
             <!-- The generated cards will go here -->

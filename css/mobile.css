@@ -1,0 +1,102 @@
+@media (max-width: 60em) {
+    #Lateral {
+        grid-column: 1 / 3;
+    }
+
+    #conteudo {
+        grid-column: 1 / 3;
+    }
+}
+
+@media (max-width: 48em) {
+    body {
+        background-image: url('../imagens/2_blur.jpg');
+        background-size: auto;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+
+    #sse1 {
+        text-align: center;
+    }
+
+    #sses1 {
+        height: 100%;
+        padding-top: 5px;
+    }
+
+    #sses1 ul {
+        display: none;
+    }
+
+    .hamburger::after {
+        content: '\2630';
+        cursor: pointer;
+    }
+
+    #hamburger:checked ~ .hamburger::after   {
+        content: '\2715';
+    }
+
+    #hamburger:checked ~ ul {
+        display: block;
+    }
+
+    #sses1 li {
+        width: 100%;
+        border-right: 0;
+        border-bottom: solid 1px #333;
+    }
+
+    #sses1 li.highlight {
+        display: none;
+        border-left: 0;
+    }
+
+    #sses1 li:hover {
+        transform: 2s;
+        border-left: solid 2px #C00;
+    }
+
+    #hamburger:checked ~ ul {
+        margin-bottom: 20px;
+    }
+
+    #Principal h1 {
+        font-size: 1.5em;
+    }
+
+    #Principal #inside-h2 {
+        font-size: 1em;
+        top: 15px;
+    }
+
+    #conteudo {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 30em) {
+    body {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    #Principal h1 {
+        margin-bottom: 50px;
+    }
+
+    #Lateral {
+        text-align: center;
+    }
+
+    #Lateral #bg-img {
+        width: 30%;
+        margin-bottom: -50px;
+    }
+
+    #conteudo {
+        height: 100%;
+    }
+}
