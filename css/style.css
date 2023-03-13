@@ -1,0 +1,249 @@
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 70%;
+    margin: 0 auto;
+    background: url('../imagens/2_blur.jpg') no-repeat fixed;
+    background-position: center;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+    line-height: 30px;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+
+    
+}
+
+#Lateral {
+    margin : 0 auto;
+    padding-top: 50px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+
+#texto-lateral {
+
+    writing-mode: vertical-rl;
+    text-orientation: upright ;
+    text-shadow: 2px 2px 5px black;
+
+}
+
+#conteudo {
+    background-color: #1e1c1bd6;
+    margin: 70px auto auto auto;
+
+    padding: 30px;
+    box-shadow: 0px 0px 10px black;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+}
+
+
+
+/* Visit http://www.menucool.com/horizontal/javascript-menu for source code and other menu CSS templates */
+
+#sse1
+{
+    /*You can decorate the menu's container, such as adding background images through this block*/
+    background-color: #222;
+
+    height: 2.3em;
+    padding: auto;
+    border-radius: 5px;
+    margin-bottom: 3em;
+}
+
+#sses1 ul 
+{ 
+    position: relative;
+    list-style-type: none;
+    float:left;
+    padding:0;margin:0;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+
+}
+#sses1 li
+{
+    float:left;
+    list-style-type: none;
+    padding:0;margin:0;background-image:none;
+    border-right: solid 1px #333;
+  
+}
+/*CSS for background bubble*/
+#sses1 li.highlight
+{
+    background-color:#800;
+    top:36px;
+    height:2px;
+    border-bottom:solid 1px #C00;
+    z-index: 1;
+    position: absolute;
+    overflow:hidden;
+    
+}
+#sses1 li a
+{
+    height:36px;
+    padding-top: 8px;
+    margin: 0 18px;/*used to adjust the distance between each menu item. Now the distance is 20+20=40px.*/
+    color: #fff;
+    font: normal 15px "open sans";
+    text-align: center;
+    text-decoration: none;
+    float: left;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+
+img#bg-img {
+    opacity: 100%;
+    width: 150px;
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    
+}
+
+h1 {
+    
+    text-align: center;
+    width: 400px;
+    text-shadow: 2px 2px 5px black;
+    margin: 0 auto;
+}
+
+#FRAC_Atualmente{
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 2px 2px 5px black;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+
+#Principal > h2{
+    margin-bottom: 20px;
+
+}
+h3 {
+    margin: 20px 0;
+    text-shadow: 2px 2px 5px black; 
+}
+
+p {
+    text-indent: 40px;
+    text-align: justify;
+    margin: 10px 0;
+}
+
+.frac {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0 0 10px black;
+    color: #5FA356;
+}
+
+h2#inside-h2 {
+    position: relative;
+    top: 60px;
+    left: 10px;
+    height: 0;
+    text-shadow: 2px 2px 5px black; 
+}
+
+img#img-principal {
+    margin-top: 2.3em;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card-container {
+    display: flex;
+    background-color: #333;
+    width: 100%;
+    padding: 1em;
+    color: #888;
+    margin-bottom: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    clear: both;
+    line-height: 1em;
+  }
+
+.card-imagem_pessoal{
+    width: 3.5em;
+    height: 4.5em;
+    position: flex;
+    margin: 10px 0 0;
+    border-radius: 5px;
+}
+
+.card-nomeTuna{
+
+    font-size: 1em;
+    font-weight: bold;
+    color: #DDD;
+}
+
+.card-nomeCaloiro{
+font-size: 0.7em;
+font-weight: bold;
+font-style: italic;
+color: #888;
+text-align: left;
+}
+
+
+.card-nomeCivil{
+    font-size: 0.5em;
+    font-weight: bold;
+    color: #888;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.card-container p {
+    text-indent: 0;
+}
+
+#Titulo-Hierarquia {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: #666 dotted 1px;
+    text-shadow: 2px 2px 5px black; 
+
+}
+
+.card-imagem_lateral{
+    width: 3.5em;
+    height: 4.5em;
+    position: flex;
+    margin: 10px 0 0;
+    border-radius: 5px;
+}
+
+.card-instrumento{
+    font-size: 0.5em;
+    font-weight: bold;
+    color: #DDD;
+    margin : 0;
+}
