@@ -27,7 +27,7 @@
 
     #sses1 ul {
         display: none;
-    }
+    } 
 
     .hamburger::after {
         content: '\2630';
