@@ -8,7 +8,7 @@
     }
 }
 
-@media (max-width: 48em) {
+@media (max-width: 50em) {
     body {
         background-image: url('../imagens/2_blur.jpg');
         background-size: auto;

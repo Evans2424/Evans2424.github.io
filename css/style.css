@@ -61,11 +61,11 @@ body {
 {
     /*You can decorate the menu's container, such as adding background images through this block*/
     background-color: #222;
-
+    max-width: 514px;
     height: 2.3em;
     padding: auto;
     border-radius: 5px;
-    margin-bottom: 3em;
+    margin: 0 auto 3em;
 }
 
 #sses1 #hamburger {
@@ -76,7 +76,7 @@ body {
     position: relative;
     list-style-type: none;
     float:left;
-    padding:0;margin:0;
+    padding:0;margin:0 auto;
     grid-column-start: 2;
     grid-column-end: 3;
 }
@@ -86,6 +86,10 @@ body {
     list-style-type: none;
     padding:0;margin:0;background-image:none;
     border-right: solid 1px #333;
+}
+
+#sses1 li:nth-child(5) {
+    border-right: none;
 }
 
 /*CSS for background bubble*/
@@ -125,7 +129,7 @@ h1, #FRAC_Atualmente {
     text-align: center;
     width: 100%;
     text-shadow: 2px 2px 5px black;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
 }
 
 #Principal > h2 {
@@ -135,7 +139,21 @@ h1, #FRAC_Atualmente {
 
 h3 {
     margin: 20px 0;
-    text-shadow: 2px 2px 5px black; 
+    text-shadow: 1px 1px 2px rgba(104, 104, 104, 0.468); 
+}
+
+h3 > a {
+    color: rgb(255, 0, 0);
+}
+
+h3 > a:hover {
+    color: rgb(148, 0, 0);
+    transition: .5s;
+}
+
+h4 {
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 
 p {
@@ -163,6 +181,10 @@ img#img-principal {
     margin-top: 2.3em;
     width: 100%;
     border-radius: 5px;
+}
+
+img.premio-pastor {
+    margin: 5px 0;
 }
 
 .card-container {
