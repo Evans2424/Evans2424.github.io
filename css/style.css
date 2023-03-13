@@ -20,9 +20,16 @@ body {
     line-height: 30px;
     display: grid;
     grid-template-columns: 1fr 8fr;
-
-    
 }
+
+@media (max-width: 767px) {
+    body {
+      background-image: url('../imagens/2_blur.jpg');
+      background-size: auto;
+      background-position: center top;
+      background-repeat: no-repeat;
+    }
+  }
 
 #Lateral {
     margin : 0 auto;
