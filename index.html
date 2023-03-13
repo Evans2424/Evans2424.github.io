@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="themes/bar/bar.css" type="text/css" media="screen" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.nivo.slider.js"></script>
     <link rel="icon" href="imagens/fr.ico" type="image/x-icon">
     <link rel="shortcut icon" href="imagens/fr.ico" type="image/x-icon">
     <meta charset="UTF-8">
@@ -33,13 +38,29 @@
         
         <div id ="Principal">
             <h1>Frente Revolucionária de Aprendizes e Caloiros</h1>
-            <h2 id="inside-h2">Os Caloiros da Tuna de Engenharia</h2>
-            <img src="imagens/2.jpg" alt="ZAS" id="img-principal">
+            <div class="slider-wrapper theme-default">
+                <div id="slider" class="nivoSlider">
+                  <img src="imagens/2.jpg" alt="Slider image 1" />
+                  <img src="imagens/6_50.jpg" alt="Slider image 2" />
+                  <img src="imagens/5.jpg" alt="Slider image 3" />
+                </div>
+              </div>
+              
             <cite>"Viva à puta da FRAC!!!"</cite>
         </div>
         <!--Fim do Principal-->
     </div>
     <!--Fim do Conteudo-->
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $('#slider').nivoSlider({
+            effect: 'fade',
+            pauseTime: 5000,
+            directionNav: true,
+          });
+        });
+      </script>
+    
 </body>
 </html>
 

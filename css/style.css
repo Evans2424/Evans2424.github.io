@@ -24,6 +24,7 @@ body {
 
 @media (max-width: 767px) {
     body {
+        width: 100%;
       background-image: url('../imagens/2_blur.jpg');
       background-size: auto;
       background-position: center top;
