@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="themes/bar/bar.css" type="text/css" media="screen" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/jquery.nivo.slider.js"></script>
     <link rel="icon" href="imagens/fr.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="imagens/fr.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/slide.css">
     <title>FRAC - Frente Revolucionária de Aprendizes de Caloiros</title>
     <script src="js/cool_menu.js"></script>
 </head>
@@ -42,64 +37,46 @@
         
         <div id ="Principal">
             <h1>Frente Revolucionária de Aprendizes e Caloiros</h1>
-            <div class="slider-wrapper theme-default">
-                <div id="slider" class="nivoSlider">
-                  <img src="imagens/2.jpg" alt="Slider image 1" />
-                  <img src="imagens/6_50.jpg" alt="Slider image 2" />
-                  <img src="imagens/5.jpg" alt="Slider image 3" />
+            
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="imagens/1.jpg" style="width:100%">
+                <div class="text">Jantar com as Levadas da Broca</div>
                 </div>
-              </div>
-              
+            
+                <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="imagens/2.png" style="width:100%">
+                <div class="text">All-Day FRACÆ</div>
+                </div>
+            
+                <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="imagens/3.jpg" style="width:100%">
+                <div class="text">Último dia do Trovador em Coimbra</div>
+                </div>
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
             <cite>"Viva à puta da FRAC!!!"</cite>
         </div>
         <!--Fim do Principal-->
     </div>
     <!--Fim do Conteudo-->
-    <script type="text/javascript">
-        $(document).ready(function(){
-          $('#slider').nivoSlider({
-            effect: 'fade',
-            pauseTime: 5000,
-            directionNav: true,
-          });
-        });
-      </script>
-    
+    <script src="js/slide.js"></script>
 </body>
 </html>
-
-
-<!-- 
-#menu {
-    margin-top: -5em;
-}
-
-ul {
-    list-style: none;
-    text-align: right;
-}
-
-li {
-    display: inline-block;
-}
-
-li > a > img {
-    width: 1em;
-    text-align: center;
-    vertical-align: middle;
-}
-
-li > a {
-    background: linear-gradient(#923c2b, #572319);
-    padding: 1em 2em;
-    text-decoration: none;
-    color: white;
-    padding: 0.5em 1em;
-    
-}
-
-li > a:hover {
-    background: linear-gradient(#5FA356, #42743c);
-}
-
--->
